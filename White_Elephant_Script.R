@@ -32,7 +32,7 @@ randomizer <- function(input = TRUE, couples = TRUE, seed = 12){
   names.ran <- data.frame("names" = names[ran,])
 
   ## Cutting the names in half to provide matching
-  match <- data.frame("first" = names.ran[1:(n/2),],"second" = names.ran[(n/2 + 1):n,])
+  match <- data.frame("first" = names,"second" = names.ran)
 
   return(match)
 } 
